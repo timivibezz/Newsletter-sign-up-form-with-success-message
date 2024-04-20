@@ -1,0 +1,233 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-content {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+    color: black;
+    border-radius: 20px;
+}
+.img-content {
+    width: 40%;
+}
+
+.img-content img {
+    width: 100%;
+}
+.mobile-img{
+    display: none;
+}
+
+.grid-1 {
+    width: 50%;
+    margin: 40px auto 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 20px 10px 20px;
+
+}
+
+.grid-1 ul {
+    list-style-image: url(./assets/images/icon-list.svg);
+    margin-top: 5px;
+    margin-left: 25px;
+}
+.grid-1 li{
+    margin-bottom: 10px;
+}
+
+ .grid-1 h2 {
+    font-size: 2.5rem;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.first-p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.email-p {
+    font-size: 12px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 10px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.568);
+    cursor: pointer;
+}
+
+button {
+    width: 80%;
+    padding: 15px;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+    outline: none;
+    border: none;
+
+}
+.hide{
+    display: none;
+}
+ /* content 2 css  */
+.content-2{
+    width: 27%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+    color: black;
+    padding:40px;
+    border-radius: 25px;
+}
+.content-2 img{
+    width: 20%;
+}
+.content-2 h1{
+    color:hsl(234, 29%, 20%) ;
+    font-size: 2rem;
+    margin: 12px 0;
+    font-weight: 700;
+}
+.content-2 p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.content-2 button{
+    width: 90%;
+    cursor: pointer;
+}
+.sucess-email{
+    font-weight: bold;
+}
+
+ @media(max-width:1280px) {
+    .grid-content{
+        height: 500px;
+ }
+    .grid-1 h2 {
+        font-size: 1.8rem;
+    }
+    .img-content img {
+        width: 100%;
+    }
+
+} 
+
+@media(max-width:1024px) {
+    .grid-content{
+        height: 450px;
+        margin-top: 15%;
+    }
+    .grid-1{
+        width: 60%;
+    }
+
+    .grid-1 h2 {
+        font-size: 1.8rem;
+    }
+
+    .first-p {
+        font-size: 14px;
+    }
+    button{
+        padding: 10px;
+    }
+}
+@media (max-width:950px){
+    .grid-content{
+        margin-top: 15%;
+        width: 70%;
+    }
+   .content-2{
+    width:40%;
+    margin-top: 30px;
+   }
+}
+@media (max-width:540px) {
+    .img-content img{
+        content: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
+    .grid-content {
+        display: flex;
+       flex-direction: column-reverse;
+       width: 100%;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+    }
+    .grid-1 h2 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    .first-p{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .email-p{
+        font-size: 14px;
+    }
+    .grid-1 ul li{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .img-content {
+        width: 100%;    
+    }
+    .grid-1 {
+        width: 90%;
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+    body{
+        background-color: white;
+    }
+    .content-2{
+        width: 70%;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+}

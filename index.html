@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="grid-content ">
+      <div class="grid-1">
+        <h2>Stay updated!</h2>
+        <p class="first-p">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li> Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+         <!-- Sign-up form start -->
+        <form action=" ">
+          <p class="email-p">Email address</p>
+        <input type="email" placeholder="email@company.com" id="email" required> <br><br>
+        <button> Subscribe to monthly newsletter</button></a>
+        </form>
+        <!-- Sign-up form end -->
+      </div>
+      <div class="img-content">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" class="desktop-img">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" class="mobile-img">
+      </div>
+    </div>
+    <div class="content-2 hide">
+      <img src="./assets/images/icon-success.svg" alt="">
+      <h1>Thanks for subscribing!</h1>
+      <p> A confirmation email has been sent to <span class="sucess-email">ash@loremcompany.com.</span> 
+          Please open it and click the button inside to confirm your subscription.
+          Dismiss message
+      </p>
+      <button id="dismiss">Dismiss message</button>
+     </div>
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Timi</a>.
+      </div> -->
+  <script src="script.js"></script>
+</body>
+</html>
